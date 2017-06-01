@@ -174,9 +174,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbi-Ju-imK">
                                         <rect key="frame" x="8" y="20" width="42" height="32"/>
                                         <state key="normal" image="back"/>
-                                        <connections>
-                                            <action selector="backButtonPressed:" destination="DqY-01-ClL" eventType="touchUpInside" id="Ta3-TP-bAa"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92837880709999998" green="0.64739564650000003" blue="0.2600201057" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
