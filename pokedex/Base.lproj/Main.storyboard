@@ -216,7 +216,7 @@
                                                             <constraint firstAttribute="width" constant="120" id="Qa3-L3-Kvr"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-K2-pTl">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-K2-pTl">
                                                         <rect key="frame" x="168" y="0.0" width="120" height="120"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="120" id="WbA-B0-xWj"/>
@@ -379,12 +379,10 @@
                                         <constraints>
                                             <constraint firstItem="sc5-dr-iFd" firstAttribute="leading" secondItem="kj3-Zk-ZwK" secondAttribute="leading" id="5fs-h4-7CU"/>
                                             <constraint firstAttribute="trailing" secondItem="AB5-Em-cM3" secondAttribute="trailing" id="M53-zn-xcP"/>
-                                            <constraint firstItem="mXn-yS-PZd" firstAttribute="top" secondItem="AB5-Em-cM3" secondAttribute="bottom" id="VMT-uJ-X6r"/>
                                             <constraint firstAttribute="trailing" secondItem="sc5-dr-iFd" secondAttribute="trailing" id="Wq1-uc-hf4"/>
                                             <constraint firstAttribute="trailing" secondItem="mXn-yS-PZd" secondAttribute="trailing" id="gS9-pg-6AJ"/>
                                             <constraint firstItem="mXn-yS-PZd" firstAttribute="leading" secondItem="kj3-Zk-ZwK" secondAttribute="leading" id="hba-94-HjL"/>
                                             <constraint firstItem="AB5-Em-cM3" firstAttribute="top" secondItem="kj3-Zk-ZwK" secondAttribute="top" id="oib-J2-eno"/>
-                                            <constraint firstItem="sc5-dr-iFd" firstAttribute="top" secondItem="mXn-yS-PZd" secondAttribute="bottom" id="xm6-Fm-RUC"/>
                                             <constraint firstItem="AB5-Em-cM3" firstAttribute="leading" secondItem="kj3-Zk-ZwK" secondAttribute="leading" id="yE1-N0-Fub"/>
                                         </constraints>
                                     </stackView>
@@ -399,20 +397,20 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fhn-1G-gny">
-                                <rect key="frame" x="16" y="409.5" width="288" height="120"/>
+                                <rect key="frame" x="16" y="409.5" width="288" height="140"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="TGr-h7-AF0">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="TGr-h7-AF0">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="PWL-Mr-3e8"/>
-                                            <constraint firstAttribute="width" constant="120" id="uRR-Hx-EvM"/>
+                                            <constraint firstAttribute="height" constant="140" id="PWL-Mr-3e8"/>
+                                            <constraint firstAttribute="width" constant="140" id="uRR-Hx-EvM"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="COL-Fj-NlL">
-                                        <rect key="frame" x="168" y="0.0" width="120" height="120"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="COL-Fj-NlL">
+                                        <rect key="frame" x="148" y="0.0" width="140" height="140"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="2EQ-ZK-93J"/>
-                                            <constraint firstAttribute="height" constant="120" id="E2F-w3-aJZ"/>
+                                            <constraint firstAttribute="width" constant="140" id="2EQ-ZK-93J"/>
+                                            <constraint firstAttribute="height" constant="140" id="E2F-w3-aJZ"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
