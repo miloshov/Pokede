@@ -10,6 +10,11 @@ import UIKit
 
 class PokemonDetailVC: UIViewController {
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        
+        
+        
+    }
     var pokemon: Pokemon!
 
     @IBOutlet weak var nameLbl: UILabel!
