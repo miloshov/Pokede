@@ -13,7 +13,7 @@ class PokemonDetailVC: UIViewController {
     var pokemon: Pokemon!
 
     @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var mianImg: UIImageView!
+    @IBOutlet weak var mainImg: UIImageView!
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var typeLbl: UILabel!
     @IBOutlet weak var defenceLbl: UILabel!
@@ -33,6 +33,13 @@ class PokemonDetailVC: UIViewController {
         
         nameLbl.text = pokemon.name.capitalized
         
+        let img = UIImage(named:"\(pokemon.pokedexId)")
+        
+        mainImg.image = img
+        currentLvlImg.image = img
+        pokeIdLbl.text = "\(pokemon.pokedexId)"
+        
+        
         pokemon.downloadPokemonDetail {
             
             // What ever we write here it will be performed only after network call is completed
@@ -49,6 +56,24 @@ class PokemonDetailVC: UIViewController {
         defenceLbl.text = pokemon.defense
         heightLbl.text = pokemon.height
         weightLbl.text = pokemon.weight
+        typeLbl.text = pokemon.type
+        descriptionLbl.text = pokemon.description
+        
+        if pokemon.nextEvolutionId == "" {
+            
+            subTitleLbl.text = "This Pokemon is fully Evolved"
+            nextLvlImg.isHidden = true
+            
+        } else {
+            
+            nextLvlImg.isHidden = false
+            nextLvlImg.image = UIImage(named: pokemon.nextEvolutionId)
+            
+            let str = "Next Evolution: \(pokemon.nextEvolutionName) - Level: \(pokemon.nextEvolutionLevel)"
+            
+            subTitleLbl.text = str
+            
+        }
         
     }
 
